@@ -12,7 +12,6 @@ data_expected[0, -1] = 1
 
 run_averages("brain_sample.csv", "brain_average.csv")
 
-# 4. 读回实际输出并比对
 try:
     actual = np.loadtxt("brain_average.csv", delimiter=',')
 except Exception as e:
